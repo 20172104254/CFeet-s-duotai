@@ -59,7 +59,7 @@ int main()
 	p->setfeet(3);//相当于orect.setfeet(3);
 	p->setinches(6);
 	p->display();//如没有虚函数为前提，基类是不能指向派生类的，输出的是基类的display,有虚函数时输出内容要取决于哪个类的无名对象赋值给的p
-	p->CFeet::display();//输出CFeet的display,限定输出的函数的类只能是基类，不能是派生类
+	p->CFeet::display();//输出CFeet的display,限定输出的函数的类只能是基类，不能是派生类，也就是只能是基类::函数
     return 0;
 }
 
